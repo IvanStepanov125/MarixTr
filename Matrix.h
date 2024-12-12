@@ -25,6 +25,18 @@ public:
         return Vector<Vector <T>>::operator-(mt);
     };
 
+    Matrix Convolution(){
+        size_t size = this->GetSize();
+        Matrix res(size - 2);
+        for (size_t i = 0; i < size - 2; i ++){
+            for (size_t j = 0; j < this->_array[i].GetSize() - 1; j ++){
+                size_t a = this->_array[i][j], b= this->_array[i][j + 1], c= this->_array[i][j + 2], d= this->_array[i + 1][j + 2], e=this->_array[i + 2][j + 2];
+                res[i][j] = a + b + c + d + e;
+            }
+        }
+        return res;
+    };
+
     Matrix operator*(const Matrix& mt){
         if (this->_size != mt.GetSize()){
             throw "Mnogo hochesh'";

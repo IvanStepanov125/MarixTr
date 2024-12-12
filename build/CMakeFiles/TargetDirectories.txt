@@ -1,0 +1,3 @@
+/home/s23380402@unn.global/MarixTr/build/CMakeFiles/main.dir
+/home/s23380402@unn.global/MarixTr/build/CMakeFiles/edit_cache.dir
+/home/s23380402@unn.global/MarixTr/build/CMakeFiles/rebuild_cache.dir
